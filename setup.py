@@ -1,4 +1,5 @@
-from distutils.core import setup
+# from distutils.core import setup
+from setuptools import setup
 
 setup(
     name='benchpy',
@@ -9,7 +10,8 @@ setup(
     description='Benchmark Python code',
     download_url='https://github.com/arteymix/benchpy/releases',
     classifiers=['Development Status :: 2 - Pre-Alpha', 'Topic :: System :: Benchmark'],
-    packages=['benchpy'],
+    py_modules=['benchpy'],
     requires=['numpy', 'yaml'],
-    license='BSD'
+    license='BSD',
+    test_suite='test_benchpy'
 )
